@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #b0e0e6; /* Background color for the whole page */
+  }
+  
+  #personInfoContainer {
+    background-color: #3498db;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center; /* Align text in the center */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  #personInfoContainer h2 {
+    color: #fff;
+  }
+  
+  #personInfoContainer p {
+    margin: 10px 0;
+  }
+  
+  #quizContainer {
+    margin: 20px;
+  }
+
+
+  button {
+    margin-left: 600px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2ecc71; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #27ae60; 
+  }
+  
+
+
+
+  #quizContainer {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #quizContainer > div {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  
+  #quizContainer p {
+    font-weight: bold;
+  }
+  
+  #quizContainer label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #quizContainer textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+  

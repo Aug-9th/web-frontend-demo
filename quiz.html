@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bộ Câu Hỏi</title>
+  <link rel="stylesheet" href="style_quiz.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="personInfoContainer" class="hidden">
+    <h2>Thông Tin Người Dùng</h2>
+    <p><strong>Họ và Tên:</strong> <span id="infoFullName"></span></p>
+    <p><strong>Ngày Tháng Năm Sinh:</strong> <span id="infoDOB"></span></p>
+    <p><strong>Căn cước công dân:</strong> <span id="infoPersonID"></span></p>
+    <p><strong>Địa chỉ thường trú:</strong> <span id="infoPersonAddess"></span></p>
+  </div>
+  <div id="quizContainer" >
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    const fullName = localStorage.getItem('fullName');
+    const dob = localStorage.getItem('dob');
+    const personID = localStorage.getItem('personID');
+    const personAddress = localStorage.getItem('personAddress');
+
+    const infoFullName = document.getElementById('infoFullName');
+    const infoDOB = document.getElementById('infoDOB');
+    const infoPersonID = document.getElementById('infoPersonID');
+    const infoPersonAddess = document.getElementById('infoPersonAddess');
+
+    infoFullName.textContent = fullName;
+    infoDOB.textContent = dob;
+    infoPersonID.textContent = personID;
+    infoPersonAddess.textContent = personAddress;
+    const personInfoContainer = document.getElementById('personInfoContainer');
+    personInfoContainer.classList.remove('hidden');
+  </script>
+  <button id="showquiz"  onclick="generateQuizQuestions()">Hiển thị bài khảo sát</button>
+  <button id="submit" onclick="submitQuiz()" style="display: none;">Hoàn thành</button>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

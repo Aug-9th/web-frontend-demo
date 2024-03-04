@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kết Quả Khảo Sát</title>
+  <link rel="stylesheet" href="style_result.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="resultContainer">
+    <h1 id="name_person"></h1>
+    <h2>Kết Quả Khảo sát</h2>
+    <p id="correctPoint"><span></span></p>
+    <img src="giphy.gif" width="150" height="150" alt="GIF động">
+    <p id="correctCount">Số câu đúng: <span></span></p>
+    <p id="wrongCount">Số câu sai: <span></span></p>
+    <div id="chartContainer" style="width: 200px; height: 200px;">
+      <canvas id="myDoughnutChart"></canvas>
+    </div>
+  </div>
+
+  <script src="result.js"></script>
+</body>
+</html>
